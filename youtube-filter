@@ -1,0 +1,84 @@
+! YouTube動画グリッド 
+
+!コンテンツの横の長さ
+youtube.com##ytd-rich-grid-renderer ytd-rich-grid-row>#contents>ytd-rich-item-renderer:style(width: 240px !important)
+youtube.com##ytd-rich-grid-renderer ytd-rich-grid-row>#contents>ytd-rich-item-renderer:style(max-width: 300px !important)
+!コンテンツflex
+youtube.com##ytd-rich-grid-row>#contents>ytd-rich-item-renderer:style(flex: 1 0 auto !important)
+!コンテンツ間のマージン
+youtube.com##ytd-rich-grid-row>#contents>ytd-rich-item-renderer:style(margin-bottom: 14px !important)
+youtube.com##ytd-rich-grid-row>#contents>ytd-rich-item-renderer:style(margin-right: 5px !important)
+youtube.com##ytd-rich-grid-row>#contents>ytd-rich-item-renderer:style(margin-left: 5px !important)
+
+
+!コンテンツを並べる
+youtube.com##ytd-rich-grid-renderer>#contents>ytd-rich-grid-row:style(display: contents !important)
+youtube.com##ytd-rich-grid-renderer>#contents>ytd-rich-grid-row>#contents:style(display: contents !important)
+!コンテンツを中央に寄せる
+youtube.com##ytd-rich-grid-renderer>#contents.ytd-rich-grid-renderer:style(justify-content: center !important)
+
+
+!コンテンツグリッドの左右パディング
+youtube.com###primary>ytd-rich-grid-renderer>#contents:style(width: auto !important)
+youtube.com###primary>ytd-rich-grid-renderer>#contents:style(padding-left: 10px !important)
+youtube.com###primary>ytd-rich-grid-renderer>#contents:style(padding-right: 10px !important)
+
+
+!動画タイトルのテキストサイズ
+youtube.com##h3>#video-title-link>#video-title:style(font-size: 1.4rem !important)
+youtube.com##h3>#video-title-link>#video-title:style(line-height: 2.0rem !important)
+!チャンネル名のテキストサイズ
+youtube.com##ytd-rich-grid-renderer #channel-name>#container>#text-container>#text:style(font-size: 1.3rem !important)
+youtube.com##ytd-rich-grid-renderer #channel-name>#container>#text-container>#text:style(line-height: 1.8rem !important)
+!視聴回数や投稿日などのテキストサイズ
+youtube.com##ytd-video-meta-block>#metadata>#metadata-line:style(font-size: 1.3rem !important)
+youtube.com##ytd-video-meta-block>#metadata>#metadata-line:style(line-height: 1.8rem !important)
+!チャンネルアイコンのサイズ
+youtube.com###details>#avatar-link>#avatar:style(width: 3rem !important)
+youtube.com###details>#avatar-link>#avatar:style(height: 3rem !important)
+youtube.com###dismissible>#details>#avatar-link:style(height: 3rem !important)
+
+
+!ゴーストカードを消す
+youtube.com###contents>ytd-continuation-item-renderer>#ghost-cards>ytd-ghost-grid-renderer:style(display: none !important)
+!読み込み部分 flex無効
+youtube.com##ytd-rich-grid-renderer>#contents>ytd-continuation-item-renderer:style(flex: 0 0 0 !important)
+!動画読み込みスピナーの位置
+youtube.com###contents>ytd-continuation-item-renderer>tp-yt-paper-spinner:style(margin: 50px 0 !important)
+youtube.com###contents>ytd-continuation-item-renderer:style(padding-left: 27px !important)
+youtube.com###contents>ytd-continuation-item-renderer:style(min-width: auto !important)
+
+
+!ここから新しく追加した箇所
+!チャンネルアイコン右マージン
+youtube.com###dismissible>#details>#avatar-link:style(mergin-right: 10px !important)
+!タイトルテキストの上下マージン
+youtube.com###details>#meta>h3.ytd-rich-grid-media:style(mergin: 9px 0 3px 0 !important)
+!チャンネルアイコンの上部マージン
+youtube.com###dismissible>#details>#avatar-link:style(mergin-top: 9px !important)
+
+
+!コンテンツメニュー
+youtube.com###details>#menu>ytd-menu-renderer:style(right: -10px !important)
+youtube.com###menu>ytd-menu-renderer>#button:style(width: 30px !important)
+youtube.com###menu>ytd-menu-renderer>#button:style(height: 30px !important)
+youtube.com###dismissible>#details>#meta:style(padding-right: 20px !important)
+
+
+!その他の調整
+!ショート，ニュースの非表示
+youtube.com##ytd-rich-grid-renderer>#contents>ytd-rich-section-renderer:has(>#content>ytd-rich-shelf-renderer):style(display: none !important)
+
+!チャンネルページのコンテンツ表示幅を増やす
+youtube.com##ytd-two-column-browse-results-renderer.grid:not(.grid-disabled):style(width: 95% !important)
+youtube.com##ytd-two-column-browse-results-renderer.grid:not(.grid-disabled):style(max-width: 100% !important)
+
+!サムネイルの丸さ
+youtube.com###thumbnail>ytd-thumbnail>a#thumbnail:style(border-radius: 3px !important)
+!プレイリスト系サムネイルの丸さ
+youtube.com###thumbnail>ytd-playlist-thumbnail>a#thumbnail:style(border-radius: 3px !important)
+youtube.com##yt-collections-stack .collections-stack-wiz__collection-stack2:style(border-radius: 3px !important)
+youtube.com##yt-collections-stack .collections-stack-wiz__collection-stack1:style(border-radius: 3px !important)
+!チャンネルアイコンの丸さ
+youtube.com###details>#avatar-link>#avatar:style(border-radius: 3px !important)
+
